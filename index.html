@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cassino Do Anão</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Cassino Do Anão</h1>
+    </header>
+
+    <div class="slots">
+      <div id="slot1" class="slot">👦</div>
+      <div id="slot2" class="slot">🧝‍♂️</div>
+      <div id="slot3" class="slot">🧙‍♂️</div>
+    </div>
+
+    <!-- Mensagem de Vitória -->
+    <div id="win-message" style="display: none;">
+      <h1>Você Ganhou!</h1>
+    </div>
+
+    <!-- Áudios -->
+    <audio id="spinSound">
+      <source src="Caça-níqueis de som de jogo multimídia(M4A_128K).m4a" type="audio/mpeg">
+      Seu navegador não suporta reprodução de áudio.
+    </audio>
+    <audio id="winSound">
+      <source src="Efeito Sonoro - Estágio Concluído - Som da Vitória - Victory Sound(M4A_128K).m4a" type="audio/mpeg">
+      Seu navegador não suporta reprodução de áudio.
+    </audio>
+
+    <!-- Barra Superior -->
+    <div class="top-bar">
+      <div id="casino-name">🎰 Cassino Do Anão</div>
+      <div id="deposit">Depósito: <span id="deposit-value">$0</span></div>
+    </div>
+
+    <!-- Modal de Registro -->
+    <div id="register-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="close-modal">&times;</span>
+        <h2>Registrar-se</h2>
+        <form id="register-form">
+          <label for="username">Nome de usuário:</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required>
+
+          <button type="submit" class="submit-btn">Registrar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Botão de Girar -->
+    <button class="spin-button" id="spin-button">Girar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
